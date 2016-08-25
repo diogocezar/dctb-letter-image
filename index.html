@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Letter Image</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<style>
+	* {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	    font-family: 'Roboto Condensed', sans-serif;
+	    color: #000;
+	    transition: all 600ms;
+	    font-style: italic;
+	}
+
+	.bg-title {
+		text-fill-color: transparent;
+		-webkit-text-fill-color: transparent;
+		background: -webkit-linear-gradient(transparent, transparent), url('./assets/images/bg.jpg') repeat;
+		background: -o-linear-gradient(transparent, transparent);
+		background-clip: text;
+		-webkit-background-clip: text;
+		background-size: cover;
+		margin: 3%;
+	}
+
+	h2 > span {
+	    display: block;
+	}
+
+	h2, h2 > span, h3, h3 > span, h4, h4 span, h5, h6 {
+	    font-weight: bold;
+	    text-transform: uppercase;
+	}
+
+	@media (max-width: 1920px) {
+		h2,
+		h2 span{
+			font-size: 175px;
+			line-height: 175px;
+		}
+	}
+
+	@media (max-width: 1600px), (max-height: 800px)  {
+		h2,
+		h2 span{
+			font-size: 125px;
+			line-height: 125px;
+			letter-spacing: -6px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		h2,
+		h2 span{
+			font-size: 62px;
+		    line-height: 62px;
+		    letter-spacing: -3px;
+		}
+	}
+
+	@media (max-width: 320px) {
+		h2,
+		h2 span{
+			font-size: 54px;
+		    line-height: 54px;
+		}
+	}
+</style>
+<body>
+	<h2 class="bg-title">
+		<span>This is</span>
+		<span>just a</span>
+		<span>simple</span>
+		<span>example</span>
+	</h2>
+</body>
+</html>
